@@ -60,6 +60,18 @@ public static void main(String[] args)
     Scanner sc=new Scanner(System.in);
     System.out.println("Enter the string to reverse:"); 
     String str=sc.nextLine();
-      //TYPE YOUR CODE HERE
+      ArrayStack arrstack=new ArrayStack(str.length());
+for(int i=0;i<str.length();i++)
+    {
+arrstack.push(str.charAt(i));
+    }
+System.out.println("Element is inserted in Stack using push.");
+arrstack.display();
+System.out.println("Reversed string using pop:");
+for(int i=str.length()-1;i>=0;i--)
+    {
+arrstack.pop();
+    }
+
 }
 }
